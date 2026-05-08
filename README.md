@@ -57,7 +57,7 @@ The dashboard is interactive and includes filters for exploring different segmen
 ---
 
 ## 📷 Dashboard Preview
-
+![Dashboard Preview](https://raw.githubusercontent.com/ParnazAli/coffee-sales-dashboard/refs/heads/main/Final_Dashboard.jpg)
 
 ---
 
