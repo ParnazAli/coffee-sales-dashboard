@@ -1,0 +1,34 @@
+راهنمای آپدیت ریپوی گیت‌هاب با ساختار جدید
+================================================
+
+۱) این پوشه (coffee-sales-dashboard) رو از حالت زیپ خارج کن و توی یک مسیر دلخواه روی سیستمت قرار بده.
+
+۲) ترمینال (یا Git Bash در ویندوز) رو باز کن و ریپوی فعلی‌ات رو کلون کن:
+
+    git clone https://github.com/ParnazAli/coffee-sales-dashboard.git repo-temp
+    cd repo-temp
+
+۳) تمام فایل‌های قدیمی رو حذف کن (به جز پوشه .git):
+
+    git rm -r --cached .
+    find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} +
+
+۴) محتوای پوشه جدید (که من ساختم) رو داخل همین پوشه repo-temp کپی کن.
+   یعنی فایل‌های زیر باید داخل repo-temp باشن:
+     README.md
+     LICENSE
+     data/raw/Raw_Dataset.xlsx
+     data/processed/Coffee_Sales.xlsx
+     dashboard/screenshots/*.jpg
+
+۵) تغییرات رو commit و push کن:
+
+    git add .
+    git commit -m "Restructure project: organize into data/ and dashboard/ folders, rewrite README with full business analysis"
+    git push origin main
+
+تمام! ریپوت الان با ساختار حرفه‌ای، README کامل، و پوشه‌بندی درست آپدیت میشه.
+
+نکته: اگه به هر دلیلی push دیتا ریجکت شد، اول این رو بزن:
+    git pull origin main --rebase
+و بعد دوباره push کن.
