@@ -123,4 +123,4 @@ This was my first independent data analysis project, built to practice the full 
 
 ---
 
-*Author: Parnaz Ali — built as part of an academic data analysis / business analytics portfolio.*
+*Author: Parnaz Ali — an independent data analysis project built to practice business analytics skills.*
